@@ -1,0 +1,45 @@
+[App]
+listen = ":8888"
+log_file = "gin-runner.log"
+frontend_dist = "../frontend/dist"
+legacy_index = "./web/index.html"
+legacy_assets = "./web/assets"
+
+[Database]
+user = "root"
+password = "123456"
+host = "localhost"
+port = 3306
+name = "finance"
+charset = "utf8mb4"
+parse_time = true
+loc = "Local"
+
+[Contract]
+address = "0x0a1f69b5273deb5c0fa1dfc7956c220eebeaed17"
+
+[AI]
+base_url = "https://ark.cn-beijing.volces.com/api/v3"
+api_key = "e49d4768-d46b-4cd3-ae83-c38a92f1bebb"
+model = "doubao-1-5-pro-32k-250115"
+timeout_sec = 30
+temperature = 0.2
+
+[Network]
+Type="channel"
+CAFile="sdk/ca.crt"
+Cert="sdk/sdk.crt"
+Key="sdk/sdk.key"
+[[Network.Connection]]
+NodeURL="111.228.57.198:20200"
+GroupID=1
+# [[Network.Connection]]
+# NodeURL="127.0.0.1:20200"
+# GroupID=2
+
+[Account]
+KeyFile="ci/0xc13fc67f57046a56252ef63ded46eb9540ef0292.pem"
+
+[Chain]
+ChainID=1
+SMCrypto=false

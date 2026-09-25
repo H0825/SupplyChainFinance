@@ -1,0 +1,27 @@
+{
+  "name": "supply-chain-finance-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@vue/compiler-sfc": "^3.4.38",
+    "@vue/runtime-dom": "^3.4.38",
+    "dompurify": "^3.3.2",
+    "element-plus": "^2.13.5",
+    "marked": "^17.0.4",
+    "pinia": "^2.1.7",
+    "postcss": "^8.4.47",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.8"
+  }
+}
